@@ -1,6 +1,6 @@
 
 
-function test() {
+/* function test() {
     let que;
     while (true) {
         que = prompt("... мене)");
@@ -19,7 +19,7 @@ function test() {
     }
 }
 
-test();
+test(); */
 
 
 /* let a = 4
