@@ -10,6 +10,7 @@ body {
   /* display: none; */
   margin: 15px 15px;
     -webkit-touch-callout: none; /* iOS Safari */
+
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
   -khtml-user-select: none;    /* Konqueror */
   -moz-user-select: none;      /* Firefox */
@@ -44,3 +45,71 @@ p {
     display: flex;
     justify-content: space-between;
 }
+
+.heart {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+
+  position: absolute;
+  left: 38%; top: 45%;
+
+  background-color: red;
+
+  transform: rotate(-45deg);
+  
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+
+  position: absolute;
+  height: 50px;
+  width: 50px;
+
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+
+@keyframes heartbeat {
+ 0% {
+   transform: scale( 1 )
+   rotate(-45deg);
+ }
+ 20% {
+   transform: scale( 1.25 )
+     translateX(5%)
+     translateY(5%)
+     rotate(-45deg);
+ }
+ 40% {
+   transform: scale( 1.5 )
+     translateX(9%)
+     translateY(10%)
+     rotate(-45deg);
+ }
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+  ...
+}
+
+
+a {
+  text-decoration:none;
+  color: #f8f4eb;
+}
+
