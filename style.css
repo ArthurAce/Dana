@@ -7,7 +7,7 @@
 }
 
 body {
-  /* display: none; */
+  display: none;
   margin: 15px 15px;
     -webkit-touch-callout: none; /* iOS Safari */
 
